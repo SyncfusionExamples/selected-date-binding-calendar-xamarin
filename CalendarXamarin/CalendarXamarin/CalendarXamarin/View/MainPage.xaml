@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CalendarXamarin"
+             xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
+             x:Class="CalendarXamarin.MainPage">
+    <Grid>
+        <calendar:SfCalendar x:Name="calendar"
+                             DataSource="{Binding Appointments}"
+                             SelectedDate="{Binding SelectedDate}">
+            <calendar:SfCalendar.BindingContext>
+                <local:ViewModel/>
+            </calendar:SfCalendar.BindingContext>
+        </calendar:SfCalendar>
+    </Grid>
+</ContentPage>
