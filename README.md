@@ -1,4 +1,4 @@
-# How to initialize the selected date in Xamarin.Forms Calendar (SfCalendar)
+# How to programatically change the selected date in Xamarin.Forms Calendar (SfCalendar)
 
 Initially, the calendar is loaded with the current day as selected date and you can initialize the calendar with specific date by using SelectedDate property in SfCalendar.
 
